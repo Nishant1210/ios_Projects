@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="igniteApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+        </scene>
+        <!--Social Share-->
+        <scene sceneID="h7C-YN-0u9">
+            <objects>
+                <viewController storyboardIdentifier="loginIds" id="pgQ-0r-qDM" customClass="socialShare" customModule="igniteApp" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gV3-0H-oR9"/>
+                        <viewControllerLayoutGuide type="bottom" id="fMc-7e-Kch"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aqX-7L-sJt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHh-ft-LTp">
+                                <rect key="frame" x="84" y="37" width="50" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="38U-PP-s7b"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Facebook Filled-500" backgroundImage="Facebook Filled-500"/>
+                                <connections>
+                                    <action selector="postOnFacebook:" destination="pgQ-0r-qDM" eventType="touchUpInside" id="k80-Yw-Qp3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mpQ-Je-yQG">
+                                <rect key="frame" x="242" y="37" width="57" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="F7p-bJ-kUo"/>
+                                    <constraint firstAttribute="width" constant="57" id="x4E-IN-Oiu"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Twitter Filled-500" backgroundImage="Twitter Filled-500"/>
+                                <connections>
+                                    <action selector="twitterButton:" destination="pgQ-0r-qDM" eventType="touchUpInside" id="b3M-Ot-dYk"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hf3-IV-pWW">
+                                <rect key="frame" x="0.0" y="123" width="375" height="544"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="mpQ-Je-yQG" secondAttribute="trailing" constant="60" id="8Ip-kY-ucz"/>
+                            <constraint firstItem="HHh-ft-LTp" firstAttribute="leading" secondItem="aqX-7L-sJt" secondAttribute="leadingMargin" constant="68" id="Jlh-BN-TAE"/>
+                            <constraint firstItem="mpQ-Je-yQG" firstAttribute="top" secondItem="HHh-ft-LTp" secondAttribute="top" id="LGZ-xl-qN1"/>
+                            <constraint firstItem="Hf3-IV-pWW" firstAttribute="top" secondItem="HHh-ft-LTp" secondAttribute="bottom" constant="44" id="ScI-h1-FjF"/>
+                            <constraint firstItem="Hf3-IV-pWW" firstAttribute="top" secondItem="mpQ-Je-yQG" secondAttribute="bottom" constant="41" id="WWn-4k-1SA"/>
+                            <constraint firstItem="mpQ-Je-yQG" firstAttribute="top" secondItem="gV3-0H-oR9" secondAttribute="bottom" constant="17" id="a52-YC-Fep"/>
+                            <constraint firstItem="Hf3-IV-pWW" firstAttribute="leading" secondItem="aqX-7L-sJt" secondAttribute="leading" id="cGX-Uh-wn3"/>
+                            <constraint firstAttribute="trailing" secondItem="Hf3-IV-pWW" secondAttribute="trailing" id="gAe-fD-BKR"/>
+                            <constraint firstItem="fMc-7e-Kch" firstAttribute="top" secondItem="Hf3-IV-pWW" secondAttribute="bottom" id="se9-hW-kbp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="facebookPostButton" destination="HHh-ft-LTp" id="aib-Yk-CYn"/>
+                        <outlet property="timelineView" destination="Hf3-IV-pWW" id="7jM-1x-MdQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T7O-RD-SCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="768.79999999999995" y="37.331334332833585"/>
+        </scene>
+        <!--Twitter Timeline-->
+        <scene sceneID="jNd-O5-xsg">
+            <objects>
+                <tableViewController storyboardIdentifier="TweetsTimeline" id="tL2-5R-eJq" customClass="twitterTimeline" customModule="igniteApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="nc2-Z8-IKh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KTs-1d-lpb">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KTs-1d-lpb" id="abV-Hk-yMH">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="tL2-5R-eJq" id="ed2-ol-RIY"/>
+                            <outlet property="delegate" destination="tL2-5R-eJq" id="aoM-Y9-dhg"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="weA-St-L8U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1656" y="183"/>
+        </scene>
+        <!--l-->
+        <scene sceneID="SUk-dE-XTa">
+            <objects>
+                <viewController id="fBe-6E-AYb" customClass="l" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xe1-Up-5IM"/>
+                        <viewControllerLayoutGuide type="bottom" id="tVB-e2-ChI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TKM-eR-rEF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U2D-1z-CVS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1012" y="958"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Facebook Filled-500" width="500" height="500"/>
+        <image name="Twitter Filled-500" width="500" height="500"/>
+    </resources>
+</document>
